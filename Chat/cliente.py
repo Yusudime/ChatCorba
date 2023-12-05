@@ -22,5 +22,9 @@ while True:
 	elif x==2:
 		break
 
+	#	message = input(username + ponto)
+	#if message.lower() == 'exite':
+	#	break
+
 	response = server.sendMessage(username, message)
 	received_message = server.receiveMessage()
