@@ -1,0 +1,6 @@
+module Chat {
+	interface ChatServer {
+		string sendMessage(in string username, in string message);
+		string receiveMessage();
+	};
+};
