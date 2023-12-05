@@ -3,10 +3,8 @@ from Chat import ChatServer
 
 orb = CORBA.ORB_init()
 ior = input("Enter IOR: ")
-
-
-if message.lower() == 'exit':
-	break
+username = input("Enter your username: ")
+ponto = ":"
 
 obj = orb.string_to_object(ior)
 server = obj._narrow(ChatServer)
@@ -19,8 +17,7 @@ while True:
 					))
 
 	if x==1:
-		username = input("Enter your username: ")
-		message = input("Digite uma mensagem: ")
+		message = input(username + ponto)
 
 	elif x==2:
 		break
